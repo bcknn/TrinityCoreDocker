@@ -8,7 +8,7 @@ RUN apt-get update && \
 	update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang 100 && \
 	rm -rf /var/lib/apt/lists/*
 
-ARG trinitycore_branch=master
+ARG trinitycore_branch=3.3.5
 ARG latest_commit=f9cefc033750af2800fd349ebae6f4afc501dfa7
 
 RUN cd ~/ && \
