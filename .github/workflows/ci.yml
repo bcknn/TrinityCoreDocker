@@ -29,7 +29,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/bcknn/trinitycore:latest
+          tags: ghcr.io/blockkieran/trinitycore:latest
         if: steps.extract_branch.outputs.branch == 'master'
 
       - name: Build and push version
@@ -37,5 +37,5 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/bcknn/trinitycore:${{ steps.extract_branch.outputs.branch }}
+          tags: ghcr.io/blockkieran/trinitycore:${{ steps.extract_branch.outputs.branch }}
         if: steps.extract_branch.outputs.branch != 'master'
