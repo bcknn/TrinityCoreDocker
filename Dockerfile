@@ -12,7 +12,7 @@ ARG trinitycore_branch=3.3.5
 ARG latest_commit=38dc5667ba13d5c1d094330b0f57ba0ee9b2dde5
 
 RUN cd ~/ && \
-	git clone -b $trinitycore_branch --depth 1 git://github.com/TrinityCore/TrinityCore.git && \
+	git clone -b $trinitycore_branch --depth 1 https://github.com/TrinityCore/TrinityCore.git && \
 	cd ~/TrinityCore && \
 	mkdir build && \
 	cd build && \
