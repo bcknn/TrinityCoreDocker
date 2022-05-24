@@ -24,8 +24,8 @@ if [ "$1" == "--builddata" ]; then
 	fi
 
 	cd /wowclient && \
-		/server/bin/mapextractor && \
 		mkdir -p gt && \
+		/server/bin/mapextractor && \
 		cp -r dbc maps gt /data && \
 		/server/bin/vmap4extractor && \
 		mkdir -p vmaps && \
