@@ -25,13 +25,13 @@ if [ "$1" == "--builddata" ]; then
 
 	cd /wowclient && \
 		/server/bin/mapextractor && \
-		mkdir gt && \
+		mkdir -p gt && \
 		cp -r dbc maps gt /data && \
 		/server/bin/vmap4extractor && \
-		mkdir vmaps && \
+		mkdir -p vmaps && \
 		/server/bin/vmap4assembler Buildings vmaps && \
 		cp -r vmaps /data && \
-		mkdir mmaps && \
+		mkdir -p mmaps && \
 		/server/bin/mmaps_generator && \
 		cp -r mmaps /data && \
 		cp -r cameras /data && \
