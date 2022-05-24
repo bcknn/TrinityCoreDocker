@@ -5,10 +5,10 @@ This image will allow you to run your own complete dockerized WoW private server
 Before running your private realm, you need to set up your data files, and initialize your database.
 
 ### Data Setup
-First, you need to build data files using your latest WoW client.  Store this in a data volume or host location.  Your data will be stored in /data, and the client will be pulled from /wowclient.  You only need to do this once.  Note that due to the nature of the data pulling files, there will be temporary data written to the WoW client directory so it cannot be mounted as read-only.
+First, you need to build data files using the 3.3.5 WoW client.  Store this in a data volume or host location.  Your data will be stored in /data, and the client will be pulled from /wowclient.  You only need to do this once.  Note that due to the nature of the data pulling files, there will be temporary data written to the WoW client directory so it cannot be mounted as read-only.
 
 ```
-docker run -it --rm -v <WOW CLIENT VOLUME>:/wowclient -v <DATA VOLUME>:/data fdrake/trinitycore --builddata
+docker run --name kbtrinity -it -v <WOW CLIENT VOLUME>:/wowclient -v <DATA VOLUME>:/data -d ghcr.io/blockkieran/trinitycore:latest --builddata
 ```
 
 ### Database Initialization
