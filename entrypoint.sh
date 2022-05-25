@@ -72,7 +72,7 @@ if [ "$1" == "--dbinit" ]; then
 fi
 
 if [ -z "$1" -o "${1:0:2}" = "--" ]; then
-	echo "You must have a parameter of --[worldserver|bnetserver|builddata|dbinit]"
+	echo "You must have a parameter of --[worldserver|authserver|builddata|dbinit]"
 	exit 1
 fi
 
