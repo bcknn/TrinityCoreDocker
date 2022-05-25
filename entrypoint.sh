@@ -6,9 +6,9 @@ if [ "$1" == "--worldserver" ]; then
 	exit 0
 fi
 
-if [ "$1" == "--bnetserver" ]; then
-	echo "Initiating bnet server"
-	cd /server/bin && ./bnetserver -c /config/bnetserver.conf
+if [ "$1" == "--authserver" ]; then
+	echo "Initiating auth server"
+	cd /server/bin && ./authserver -c /config/authserver.conf
 	exit 0
 fi
 
