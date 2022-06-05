@@ -125,6 +125,6 @@ SET realmList "<DOCKER HOST IP ADDRESS>"
 ```
 
 ## Caveats
-Frank's caveat's: The goal of the docker image was to streamline as much of the setup as possible within reason, but it was not designed to be a complete keyturn solution.  Please refer to [the wiki](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130077/Installation+Guide) for step by step details if you run into issues.
+Fred's caveat's: The goal of the docker image was to streamline as much of the setup as possible within reason, but it was not designed to be a complete keyturn solution.  Please refer to [the wiki](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130077/Installation+Guide) for step by step details if you run into issues.
 
-Updated: This configuration was sadly abandoned, but so much good work was done that it was possible to get it working easily enough.  It does look like Frank was trying to update it for the latest version of work and not WOTLK, which I have rolled back to make it work.  Most errors you will receive can be solved through the official trinitycore help or basic docker troubleshooting.  I hope that I have covered enough for you to get set up.
+Updated: This configuration was sadly abandoned, but so much good work was done that it was possible to get it working easily enough.  It does look like Fred was trying to update it for the latest version of work and not WOTLK, which I have rolled back to make it work.  Most errors you will receive can be solved through the official trinitycore help or basic docker troubleshooting.  I hope that I have covered enough for you to get set up.
